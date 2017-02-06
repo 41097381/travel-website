@@ -1,0 +1,118 @@
+<!DOCTYPE>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+
+
+
+<ul class="topnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="#contact">Videos</a></li>
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+
+			<div id="slider" class="carousel slide" data-ride="carousel">
+				<!-- indicators dot nov -->
+
+				<!-- wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img scr="images/half.jpg" alt="elephant"/>
+						<div class="carousel-caption">
+							<h1>elephant</h1>
+						</div>
+
+					</div>
+
+
+
+
+				</div>
+
+				<!-- controls or next and prev buttons -->
+
+			</div>	
+
+		</div>
+	</div>
+</div	
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<div class="contents">
+
+<div class="textp">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+  </div>
+
+<div class="image-container">
+
+
+	<div class="w3-content w3-display-container" style="max-width:1300px">
+  <img class="mySlides" src="images/c4.jpg" style="width:100%">
+  <img class="mySlides" src="images/c2.jpg" style="width:100%">
+  <img class="mySlides" src="images/c3.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+
+
+
+  </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+</div>
+
+</body>
+</html>

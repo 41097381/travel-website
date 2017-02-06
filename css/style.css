@@ -1,0 +1,173 @@
+}
+.main-container{
+    display: flex;
+    width:90%; margin:auto;
+    flex-wrap: wrap;
+
+}
+body{
+.texture{
+    width:100%;
+    height: 150px;
+    background-image: "images/ny.jpg"
+    
+}
+}
+
+
+
+body {margin: 0;}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: f2eee2;
+    position: fixed;
+    top:0;
+    width:100%;
+
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: non;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: 4ebeed;}
+
+ul.topnav li a.active {background-color: ed2584 ;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+.responsive{
+    width:100%;
+    max-width: 100%;
+}
+
+.parent{
+    font-size: 28px;
+    display:flex;
+    margin:5%;
+    margin-bottom: 10%;
+}
+
+.child-1{
+    flex:1;
+    text-align: center;
+}
+
+
+
+.parent-2{
+    font-size: 26px;
+    display: flex;
+    margin: 5%;
+}
+
+.baby{
+    position: relative;
+    top: -40px;
+    left: -5px;
+    -webkit-box-shadow: 22px 19px 6px -3px rgba(0,0,0,0.59);
+-moz-box-shadow: 22px 19px 6px -3px rgba(0,0,0,0.59);
+box-shadow: 22px 19px 6px -3px rgba(0,0,0,0.59);
+}
+
+h1{
+    font-size: 40px;
+    color:ed2584;
+
+
+}
+
+
+
+
+.baby:nth-child(1){background-color: f2eee2;}
+
+
+p{
+    font-size: 29px;
+    margin:5%;
+
+}
+
+.image-container{
+   display:flex;
+   margin-left: 5%
+
+   %;
+
+}
+
+
+
+.calender{
+    position: relative;
+    display: flex;
+    width:90%; margin:auto;
+    flex-wrap: wrap;
+
+    
+
+}
+
+.box{
+   
+    width:20%;
+    height: 25%;
+    background-color: f2eee2;
+}
+
+.grey{background-color: e2dccc;}
+
+
+.daily-1{
+    display:flex;
+    width:90%; margin:auto;
+}
+
+
+.break{
+    display:flex;
+    width:100%;
+    height:-60px;
+}
+
+
+.contents{
+    display: flex;
+    width: 100%;
+
+}
+
+.textp{
+    
+    width:35%;
+    margin-left:5%;
+}
+
+.image-container{
+    width:65%;
+}
+
+
+@media(min-width: 900px){
+    .main-container{
+     display:flex;
+     flex-wrap:wrap;
+     justify-content:space-between;
+}
+}
+
